@@ -14,9 +14,8 @@ def unicode_hex(string, dictionary):
     counter = len(list)
 
     while counter > 0:
-        temp_char = list[-counter]
-        if temp_char in dictionary.keys():
-            hex.append(dictionary[temp_char])
+        if list[-counter] in dictionary.keys():
+            hex.append(dictionary[list[-counter]])
         counter -= 1
 
     return hex
